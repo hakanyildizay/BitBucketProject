@@ -199,6 +199,17 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Hakan Yildizay";
 				TargetAttributes = {
+					FF3FD27919B2557800BA3A01 = {
+						DevelopmentTeam = 3673WZYU3N;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
 					FF3FD29A19B2557800BA3A01 = {
 						TestTargetID = FF3FD27919B2557800BA3A01;
 					};
@@ -376,10 +387,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BitBucketProject/BitBucketProject-Prefix.pch";
 				INFOPLIST_FILE = "BitBucketProject/BitBucketProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1ecb72a8-a8b8-4b33-872e-41e9f0973a9f";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +403,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BitBucketProject/BitBucketProject-Prefix.pch";
 				INFOPLIST_FILE = "BitBucketProject/BitBucketProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1ecb72a8-a8b8-4b33-872e-41e9f0973a9f";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,6 +473,7 @@
 				FF3FD2AE19B2557800BA3A01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF3FD2AF19B2557800BA3A01 /* Build configuration list for PBXNativeTarget "BitBucketProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +482,7 @@
 				FF3FD2B119B2557800BA3A01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
